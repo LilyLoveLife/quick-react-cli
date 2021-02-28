@@ -6,7 +6,7 @@
  * @Author: Lily
  * @Date: 2021-02-28 12:01:33
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-02-28 17:48:01
+ * @LastEditTime: 2021-02-28 20:13:07
  */
 
 const program = require('commander')
@@ -37,6 +37,6 @@ download(
         }
         spinner.succeed()
         console.log(chalk.cyan('\n Completed creating project!'))
-        console.log(chalk.cyan('\n To get started,  cd ${projectName} \n`'))
+        console.log(chalk.cyan(`\n To get started,  cd ${projectName} \n`))
     }
 )
