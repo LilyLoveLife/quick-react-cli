@@ -1,5 +1,5 @@
 {
-  "name": "my-react-cli",
+  "name": "quick-react-cli",
   "version": "1.0.0",
   "description": "Create react project with basic configs convenietnly",
   "main": "index.js",
