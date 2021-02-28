@@ -1,0 +1,30 @@
+{
+  "name": "my-react-cli",
+  "version": "1.0.0",
+  "description": "Create react project with basic configs convenietnly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LilyLoveLife/my-react-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LilyLoveLife/my-react-cli/issues"
+  },
+  "homepage": "https://github.com/LilyLoveLife/my-react-cli#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^7.1.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^8.0.0",
+    "ora": "^5.3.0"
+  },
+  "bin": {
+    "init": "bin/init.js"
+  }
+}
