@@ -2,7 +2,7 @@
 Create react project with basic configs convenietnly
 
 
-｀npx quick-react-cli your-project-name｀
+｀npx quick-react-cli [your-project-name]｀
 
 Create a react project with typescript, craco, axios, proxy, eslint, prettier, routes, layouts.
 The commit could trigger eslint.
