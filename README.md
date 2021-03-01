@@ -1,5 +1,13 @@
+<!--
+ * @Description: 
+ * @version: 
+ * @Author: 
+ * @Date: 2021-03-01 21:50:57
+ * @LastEditors: 
+ * @LastEditTime: 2021-03-01 23:38:43
+-->
 # quick-react-cli
-Create react project with basic configs convenietnly
+Create react project with basic configs convenietly
 
 
 ｀npx quick-react-cli [your-project-name]｀
