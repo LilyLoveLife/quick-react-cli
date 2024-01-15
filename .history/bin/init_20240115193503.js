@@ -9,7 +9,7 @@
  * @LastEditTime: 2021-02-28 20:13:07
  */
 
-// const program = require('commander')
+const program = require('commander')
 const chalk = require('chalk')
 const ora = require('ora')
 const download = require('download-git-repo')

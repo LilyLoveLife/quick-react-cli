@@ -9,7 +9,7 @@
  * @LastEditTime: 2021-02-28 20:13:07
  */
 
-// const program = require('commander')
+const program = require('commander')
 const chalk = require('chalk')
 const ora = require('ora')
 const download = require('download-git-repo')
@@ -32,7 +32,6 @@ const questions = [{
     message: 'What is your new project name?',
     default: 'newProject'
 }]
-const spinner = ora("Downloading...")
 prompt(questions).then(answers => {  
     console.log(answers) 
     const {template, projectName} = answers
@@ -53,29 +52,29 @@ prompt(questions).then(answers => {
         }
     )
 })
-// const templateUrl = 'LilyLoveLife/my-react-template'
-// const spinner = ora("Downloading...")
+const templateUrl = 'LilyLoveLife/my-react-template'
+const spinner = ora("Downloading...")
 
-// program.usage('[project-name]').parse(process.argv)
+program.usage('[project-name]').parse(process.argv)
 
-// let projectName = program.args[0]
-// if (!projectName) {
-//     console.log(chalk.red('\n ProjectName should not be empty! \n '))
-//     return
-// }
+let projectName = program.args[0]
+if (!projectName) {
+    console.log(chalk.red('\n ProjectName should not be empty! \n '))
+    return
+}
 
-// spinner.start()
-// download(
-//     templateUrl,
-//     projectName,
-//     err => {
-//         if (err) {
-//             spinner.fail()
-//             console.log(chalk.red(`Fail to create project. ${err}`))
-//             return
-//         }
-//         spinner.succeed()
-//         console.log(chalk.cyan('\n Completed creating project!'))
-//         console.log(chalk.cyan(`\n To get started,  cd ${projectName} \n`))
-//     }
-// )
+spinner.start()
+download(
+    templateUrl,
+    projectName,
+    err => {
+        if (err) {
+            spinner.fail()
+            console.log(chalk.red(`Fail to create project. ${err}`))
+            return
+        }
+        spinner.succeed()
+        console.log(chalk.cyan('\n Completed creating project!'))
+        console.log(chalk.cyan(`\n To get started,  cd ${projectName} \n`))
+    }
+)
