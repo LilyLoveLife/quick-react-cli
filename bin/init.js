@@ -17,7 +17,7 @@ const inquirer = require('inquirer');
 const prompt = inquirer.createPromptModule();  
 
 const templateMap = {
-    'webpack + pc': 'LilyLoveLife/my-react-template',
+    'webpack': 'LilyLoveLife/my-react-template-webpack',
     'vite + mobile': 'LilyLoveLife/my-react-template-vite-mobile'
 }
 const questions = [{
