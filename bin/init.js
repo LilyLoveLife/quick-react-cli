@@ -24,7 +24,7 @@ const questions = [{
     type: 'list',
     name: 'template',
     message: 'Which template do you want?',
-    choices: ['vite + mobile', 'webpack + pc'],
+    choices: ['vite + mobile', 'webpack'],
     default: 'vite + mobile'
 }, {
     type: 'input',
