@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/LilyLoveLife/my-react-cli.git"
   },
-  "keywords": [],
+  "keywords": ["react cli", "react", "cli", "init project", "quick-react-cli", "Webpack", "Vite"],
   "author": "",
   "license": "ISC",
   "bugs": {
